@@ -52,12 +52,11 @@ article {
 .sidebar {
   grid-column: 1 / 2;
   grid-row: span 2;
-  background: purple;
+  background: var(--primary);
 }
 
 /* Sidebar Nav Grid */
 .sidebar .nav-grid {
-  background: blue;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
@@ -67,13 +66,11 @@ article {
 .nav-grid .navbar-upper {
   grid-column: span 1;
   grid-row: 1 / 2;
-  background: orange;
 }
 
 .nav-grid .navbar-lower {
   grid-column: span 1;
   grid-row: 2 / 3;
-  background-color: red;
 }
 
 /* Header */
@@ -132,13 +129,44 @@ article {
 
 /* Aside Cards */
 .aside {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .aside .aside-wrapper {
-    height: 100%;
-    width: 100%;
-    content: " ";
-    background:rosybrown;
+  height: 100%;
+  width: 100%;
+  content: " ";
+  background: rosybrown;
+}
+
+/* Styling */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.sidebar .navbar {
+  padding-left: 1rem;
+}
+
+.navbar > li {
+  margin-bottom: 0.5rem;
+}
+
+.navbar > li > a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.5rem;
+  color: var(--light);
+  text-transform: capitalize;
+}
+
+.navbar > li > a > img {
+  width: 35px;
+  margin-right: 15px;
+  filter: invert(1);
 }
