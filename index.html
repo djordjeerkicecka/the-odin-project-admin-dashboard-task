@@ -1,103 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
     <main class="layout">
-        <!-- Sidebar -->
-        <section class="sidebar">
-            <img class="logo" src="./src/logo.png" alt="">
-        
-            <!-- Sidebar Nav Grid-->
-            <nav class="nav-grid">
-                <!-- Navbar Upper -->
-                <ul class="navbar navbar-upper">
-                    <li><a href="#"><img src="./src/icons/icon_home.svg" alt="">home</a></li>
-                    <li><a href="#"><img src="./src/icons/icon_account.svg" alt="">profile</a></li>
-                    <li><a href="#"><img src="./src/icons/icon_message.svg" alt="">messages</a></li>
-                    <li><a href="#"><img src="./src/icons/icon_history.svg" alt="">history</a></li>
-                    <li><a href="#"><img src="./src/icons/icon_files.svg" alt="">tasks</a></li>
-                    <li><a href="#"><img src="./src/icons/icon_community.svg" alt="">communities</a></li>
-                </ul>
-                
-                <!-- Navbar Lower-->
-                <ul class="navbar navbar-lower">
-                    <li><a href="#"><img src="./src/icons/icon_settings.svg" alt="">settings</a></li>
-                    <li><a href="#"><img src="./src/icons/icon_help.svg" alt="">support</a></li>
-                    <li><a href="#"><img src="./src/icons/icon_shield.svg" alt="">privacy</a></li>
-                </ul>
-            </nav>
+      <!-- Sidebar -->
+      <section class="sidebar">
+        <img class="logo" src="./src/logo.png" alt="" />
+
+        <!-- Sidebar Nav Grid-->
+        <nav class="nav-grid">
+          <!-- Navbar Upper -->
+          <ul class="navbar navbar-upper">
+            <li>
+              <a href="#"><img src="./src/icons/icon_home.svg" alt="" />home</a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./src/icons/icon_account.svg" alt="" />profile</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./src/icons/icon_message.svg" alt="" />messages</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./src/icons/icon_history.svg" alt="" />history</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./src/icons/icon_files.svg" alt="" />tasks</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./src/icons/icon_community.svg"
+                  alt=""
+                />communities</a
+              >
+            </li>
+          </ul>
+
+          <!-- Navbar Lower-->
+          <ul class="navbar navbar-lower">
+            <li>
+              <a href="#"
+                ><img src="./src/icons/icon_settings.svg" alt="" />settings</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./src/icons/icon_help.svg" alt="" />support</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./src/icons/icon_shield.svg" alt="" />privacy</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <!-- Header -->
+      <section class="header">
+        <!-- Header Upper -->
+        <article class="header-upper">
+          <div class="search">
+            <img src="./src/icons/icon_search.svg" alt="" />
+            <input type="text" />
+          </div>
+
+          <div class="user-status">
+            <img class="bell" src="./src/icons/icon_bell.svg" alt="" />
+            <img class="profile" src="./src/profile.png" alt="" />
+            <h2 class="user">morgan oakley</h2>
+          </div>
+        </article>
+
+        <!-- Header Lower -->
+        <article class="header-lower">
+          <div class="greeting">
+            <img src="./src/profile.png" alt="" />
+            <div>
+              <h4>Hi there,</h4>
+              <h2><span>morgan oakley</span> (@morgan)</h2>
+            </div>
+          </div>
+
+          <ul class="header-nav">
+            <li><a href="#">new</a></li>
+            <li><a href="#">upload</a></li>
+            <li><a href="#">share</a></li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Content -->
+      <section class="content-grid">
+        <!-- Cards -->
+        <section class="cards">
+          <h2 class="title">your projects</h2>
+
+          <!-- Cards Grid -->
+          <section class="card-grid">
+            <article class="card">
+              <h3>super cool project</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Adipisci officiis quas tenetur noncum deserunt!
+              </p>
+              <div class="controls">
+                <a href="#"><img src="./src/icons/icon_star.svg" alt="" /></a>
+                <a href="#"><img src="./src/icons/icon_eye.svg" alt="" /></a>
+                <a href="#"><img src="./src/icons/icon_merge.svg" alt="" /></a>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>less cool project</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae eligendi eius unde voluptatibus, accusantium aperiam
+                nisi perferendis illum, aliquam molestias quis architecto
+              </p>
+              <div class="controls">
+                <a href="#"><img src="./src/icons/icon_star.svg" alt="" /></a>
+                <a href="#"><img src="./src/icons/icon_eye.svg" alt="" /></a>
+                <a href="#"><img src="./src/icons/icon_merge.svg" alt="" /></a>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>impossible app</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis ad a cupiditate culpa asperiores laudantium vel
+                sapiente amet sequi qui cum quisquam, exercitationem ea? Veniam.
+              </p>
+              <div class="controls">
+                <a href="#"><img src="./src/icons/icon_star.svg" alt="" /></a>
+                <a href="#"><img src="./src/icons/icon_eye.svg" alt="" /></a>
+                <a href="#"><img src="./src/icons/icon_merge.svg" alt="" /></a>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>easy peasy app</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae autem quis necessitatibus nemo tempora. Facilis
+                consectetur laudantium provident assumenda, venia
+              </p>
+              <div class="controls">
+                <a href="#"><img src="./src/icons/icon_star.svg" alt="" /></a>
+                <a href="#"><img src="./src/icons/icon_eye.svg" alt="" /></a>
+                <a href="#"><img src="./src/icons/icon_merge.svg" alt="" /></a>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>ad blocker</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
+                laboriosam deleniti eaque ex debitis incidunt soluta nesciunt
+                pariatur corporis corrupti quaerat, quis quibusdam, doloribus ea
+                exercitationem ut. Odio, eaque qui!
+              </p>
+              <div class="controls">
+                <a href="#"><img src="./src/icons/icon_star.svg" alt="" /></a>
+                <a href="#"><img src="./src/icons/icon_eye.svg" alt="" /></a>
+                <a href="#"><img src="./src/icons/icon_merge.svg" alt="" /></a>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>money maker</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                sequi libero maiores sapiente iusto illo exercitationem a
+                pariatur incidunt, cupidita
+              </p>
+              <div class="controls">
+                <a href="#"><img src="./src/icons/icon_star.svg" alt="" /></a>
+                <a href="#"><img src="./src/icons/icon_eye.svg" alt="" /></a>
+                <a href="#"><img src="./src/icons/icon_merge.svg" alt="" /></a>
+              </div>
+            </article>
+
+            <article class="card">
+                <h3>ad blocker</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
+                  laboriosam deleniti eaque ex debitis incidunt soluta nesciunt
+                  pariatur corporis corrupti quaerat, quis quibusdam, doloribus ea
+                  exercitationem ut. Odio, eaque qui!
+                </p>
+                <div class="controls">
+                  <a href="#"><img src="./src/icons/icon_star.svg" alt="" /></a>
+                  <a href="#"><img src="./src/icons/icon_eye.svg" alt="" /></a>
+                  <a href="#"><img src="./src/icons/icon_merge.svg" alt="" /></a>
+                </div>
+              </article>
+  
+              <article class="card">
+                <h3>money maker</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                  sequi libero maiores sapiente iusto illo exercitationem a
+                  pariatur incidunt, cupidita
+                </p>
+                <div class="controls">
+                  <a href="#"><img src="./src/icons/icon_star.svg" alt="" /></a>
+                  <a href="#"><img src="./src/icons/icon_eye.svg" alt="" /></a>
+                  <a href="#"><img src="./src/icons/icon_merge.svg" alt="" /></a>
+                </div>
+              </article>
+          </section>
         </section>
 
-        <!-- Header -->
-        <section class="header">
-            <!-- Header Upper -->
-            <article class="header-upper">
-                <div class="search">
-                    <img src="./src/icons/icon_search.svg" alt="">
-                    <input type="text">
-                </div>
+        <section class="aside">
+          <!-- Aside Card -->
+          <article class="aside-upper">
+            <h2 class="title">announcements</h2>
+            <div class="aside-wrapper">
+              <article class="article">
+                <h4>site maintenance</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis natus earum quam repellat re
+                </p>
+              </article>
 
-                <div class="user-status">
-                    <img class="bell" src="./src/icons/icon_bell.svg" alt="">
-                    <img class="profile" src="./src/profile.png" alt="">
-                    <h2 class="user">morgan oakley</h2>
-                </div>
-            </article>
+              <hr class="article-underline" />
 
-            <!-- Header Lower -->
-            <article class="header-lower">
-                <div class="greeting">
-                    <img src="./src/profile.png" alt="">
-                    <div>
-                        <h4>Hi there,</h4>
-                        <h2><span>morgan oakley</span> (@morgan)</h2>
-                    </div>
-                </div>
+              <article class="article">
+                <h4>site maintenance</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis natus earum quam repellat re
+                </p>
+              </article>
 
-                <ul class="header-nav">
-                    <li><a href="#">new</a></li>
-                    <li><a href="#">upload</a></li>
-                    <li><a href="#">share</a></li>
-                </ul>
-            </article>
+              <hr class="article-underline" />
+
+              <article class="article">
+                <h4>site maintenance</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis natus earum quam repellat rec
+                </p>
+              </article>
+            </div>
+          </article>
+
+          <!-- Aside Card -->
+          <article class="aside-lower">
+            <h2 class="title">trending</h2>
+            <div class="aside-wrapper">
+              <article class="article">
+                <img src="./src/profile.png" alt="" />
+                <div>
+                  <h4>@tegan</h4>
+                  <h3>wordl peace builder</h3>
+                </div>
+              </article>
+
+              <article class="article">
+                <img src="./src/profile.png" alt="" />
+                <div>
+                  <h4>@morgan</h4>
+                  <h3>super cool project</h3>
+                </div>
+              </article>
+
+              <article class="article">
+                <img src="./src/profile.png" alt="" />
+                <div>
+                  <h4>@kendall</h4>
+                  <h3>life changing app</h3>
+                </div>
+              </article>
+
+              <article class="article">
+                <img src="./src/profile.png" alt="" />
+                <div>
+                  <h4>@alex</h4>
+                  <h3>no traffic maker</h3>
+                </div>
+              </article>
+            </div>
+          </article>
         </section>
-        
-        <!-- Content -->
-        <section class="content-grid">
-            <!-- Cards -->
-            <section class="cards">
-                <h2 class="title">Placeholder Title</h2>
-                
-                <!-- Cards Grid -->
-                <section class="card-grid">
-                    <article class="card"></article>
-                    <article class="card"></article>
-                    <article class="card"></article>
-                    <article class="card"></article>
-                    <article class="card"></article>
-                    <article class="card"></article>
-                </section>
-            </section>
-
-            <!-- Aside Card -->
-            <article class="aside upper">
-                <h2 class="title">Placeholder Title</h2>
-                <div class="aside-wrapper"></div>
-            </article>
-
-            <!-- Aside Card -->
-            <article class="aside lower">
-                <h2 class="title">Placeholder Title</h2>
-                <div class="aside-wrapper"></div>
-            </article>
-        </section>
+      </section>
     </main>
-</body>
+  </body>
 </html>
